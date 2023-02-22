@@ -4,25 +4,30 @@ This is a demonstration of the factory design pattern.
 This repo is ment to demonstrate the factory design pattern to people who are new to design patterns.
 As this is ment for beginners, the implementations will be simple.
 
-We will taka a bottom-up approach in understanding the pattern.
+We will take a bottom-up approach in understanding the pattern.
 
 We will start out with the explaination in a while, but first we must ask ourselves, 
 why do we call this a pattern ?
-->  This is because this idea can be used whenever there is a need for creation of objects on the go.
+
+    This is because this idea can be used whenever there is a need for creation of objects on the go.
     Suppose, there is a product named "Juice", so there will be some kind of factory to create it.
     Similarly, there might be a product "Bike", so there will be a factory for it as well. You see the
     idea here? We create a dedicated class to create objects of one kind, that is the basic idea of the
-    factory design pattern. But wait, the builder design pattern also creates a dedicated class for the
-    creation of objects, so what's the difference? The main difference is that the builder design pattern
-    facilitates in creating one single object piece by piece, where the factory design pattern creates
-    ab object in one go.
+    factory design pattern.
+    
+    
+    
+But wait, the builder design pattern also creates a dedicated class for the
+creation of objects, so what's the difference? The main difference is that the builder design pattern
+facilitates in creating one single object piece by piece, whereas the factory design pattern creates
+an object in one go.
 
 # Problem-Statement
-Suppose, you have four printers. Daisy Wheel, Dot Matrix, Laser and our favourite, Ink Jet. And you want to
-print papers, but each paper can be printed only by a specific kind of printer. So, you have to create each
-type of printer object on the run-time. Also, your system  should be scalable, such that if you buy a new
-kind of printer tomorrow, you should be able to include that in your code whthout changing the working of
-current code.
+Suppose, you have four printers. Daisy Wheel, Dot Matrix, Laser and our favourite, Ink Jet Printer.
+And you want to print papers, but each paper can be printed only by a specific kind of printer. So, you
+have to create each type of printer object on the run-time. Also, your system  should be scalable, such
+that if you buy a new kind of printer tomorrow, you should be able to include that in your code whthout
+changing the working of current code.
 
 The best way to go about this problem is to go like this following,
 
